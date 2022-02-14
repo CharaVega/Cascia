@@ -1,0 +1,493 @@
+/* HOMEPAGE STYLE*/
+
+
+/*MENU ICON TOP-RIGHT*/
+
+.table-rows-icon-1 {
+    width: 28px;
+    height: 28px;
+    background: #000000;
+}
+
+
+/*MENU ICON RECT1*/
+
+.rectangle-21 {
+    width: 54px;
+    height: 50px;
+    padding: 8px 8px 8px 8px;
+    background: #ffffff;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+/*MENU ICON RECT1*/
+
+.rectangle-20 {
+    width: 128px;
+    height: 50px;
+    padding: 8px 8px 8px 8px;
+    background: #ffffff;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+/*TEXT RECT2 MENU ICON*/
+
+.paragraph-16 {
+    width: 98px;
+    height: 19px;
+    color: #798da3;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+
+/*MENU RECT3*/
+
+.rectangle-19 {
+    width: 120px;
+    height: 50px;
+    padding: 8px 8px 8px 8px;
+    background: #ffffff;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+/*TEXT RECT3*/
+
+.paragraph-17 {
+    width: 98px;
+    height: 19px;
+    color: #798da3;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+
+/*MENU RECT4*/
+
+.rectangle-18 {
+    width: 126px;
+    height: 50px;
+    padding: 8px 8px 8px 8px;
+    background: #ffffff;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+/*TEXT RECT4*/
+
+.paragraph-27 {
+    width: 98px;
+    height: 19px;
+    color: #798da3;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+
+/*LOGO TOP-LEFT*/
+
+.shape-656-copy-8-svg-7 {
+    width: 71px;
+    height: 16px;
+}
+
+
+/*CATCH PHRASE CENTER*/
+
+.paragraph-5 {
+    width: 365px;
+    height: 35px;
+    color: #3b4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+/*BACKGROUND IMAGE TOP*/
+
+.image-placeholder-1 {
+    width: 840px;
+    height: 616px;
+    background: #edf0f4;
+}
+
+
+/*SWIPE ICONS*/
+
+.keyboard-arrow-right-icon-1 {
+    width: 44px;
+    height: 44px;
+    background: #000000;
+}
+
+.keyboard-arrow-left-icon-1 {
+    width: 44px;
+    height: 44px;
+    background: #000000;
+}
+
+
+/*FIRST PART OF THE MAIN PAGE ENDS*/
+
+
+/*DESCRIPTION 2ND PART*/
+
+.paragraph-28 {
+    width: 244px;
+    height: 185px;
+    color: #3b4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/*IMG DESCRIPTION 2ND PART*/
+
+.image-placeholder-2 {
+    width: 276px;
+    height: 419px;
+    background: #edf0f4;
+}
+
+
+/*LOCATION LOGO*/
+
+.place-icon-1 {
+    width: 24px;
+    height: 24px;
+    background: #000000;
+}
+
+
+/*LOCATION TEXT*/
+
+.paragraph-29 {
+    width: 268px;
+    height: 22px;
+    color: #3b4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/*TELEPHONE LOGO*/
+
+.local-phone-icon-1 {
+    width: 24px;
+    height: 24px;
+    background: #000000;
+}
+
+
+/*TELEPHONE TEXT*/
+
+.paragraph-30 {
+    width: 268px;
+    height: 22px;
+    color: #3b4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/*TIME ICON*/
+
+.timer-icon-1 {
+    width: 24px;
+    height: 24px;
+    background: #000000;
+}
+
+
+/*TIME TEXT*/
+
+.paragraph-31 {
+    width: 268px;
+    height: 22px;
+    color: #3b4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/*REVIEW HEADER*/
+
+.header-9 {
+    width: 320px;
+    height: 30px;
+    color: #3b4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+
+/*REVIEW SWIPING BLOCKS (TEXT AREA)*/
+
+.text-area-1 {
+    width: 388px;
+    height: 100px;
+    padding: 4px 8px 4px 8px;
+    background: #ffffff;
+    color: #c0c0c0;
+    border-color: #232323;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px 3px 3px 3px;
+    font-family: "Helvetica";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: left;
+}
+
+
+/*ARROW LEFT SWIPE REVIEW*/
+
+.navigate-before-icon-1 {
+    width: 36px;
+    height: 36px;
+    background: #000000;
+}
+
+
+/*SWIPE RIGHT ARROW REVIEW*/
+
+.navigate-next-icon-1 {
+    width: 36px;
+    height: 36px;
+    background: #000000;
+}
+
+
+/*MENU1 IMAGE*/
+
+.image-placeholder-3 {
+    width: 179px;
+    height: 290px;
+    background: #edf0f4;
+}
+
+
+/*MENU2 IMAGE*/
+
+.image-placeholder-4 {
+    width: 179px;
+    height: 290px;
+    background: #edf0f4;
+}
+
+
+/*MENU3 IMAGE*/
+
+.image-placeholder-6 {
+    width: 179px;
+    height: 290px;
+    background: #edf0f4;
+}
+
+
+/*LOGO HEADER BOTTOM*/
+
+.header-40 {
+    width: 127px;
+    height: 28px;
+    color: #3b4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+
+/*LOGO BACKGROUND BOTTOM*/
+
+.image-placeholder-5 {
+    width: 125px;
+    height: 87px;
+    background: #edf0f4;
+}
+
+
+/*BOTTOM BLOCK1*/
+
+.rectangle-15 {
+    width: 155px;
+    height: 50px;
+    padding: 8px 8px 8px 8px;
+    background: #ffffff;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+/*BOTTOM TEXT 1*/
+
+.header-28 {
+    width: 224px;
+    height: 28px;
+    color: #3b4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+
+/*BOTTOM BLOCK2 */
+
+.rectangle-16 {
+    width: 155px;
+    height: 50px;
+    padding: 8px 8px 8px 8px;
+    background: #ffffff;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+/*BOTTOM TEXT2*/
+
+.header-30 {
+    width: 224px;
+    height: 28px;
+    color: #3b4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+
+/*BOTTOM BLOCK3*/
+
+.rectangle-17 {
+    width: 155px;
+    height: 50px;
+    padding: 8px 8px 8px 8px;
+    background: #ffffff;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+/*BOTTOM TEXT 3*/
+
+.header-25 {
+    width: 215px;
+    height: 27px;
+    color: #3b4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+
+/*PATTERN VERY BOTTOM*/
+
+.image-placeholder-7 {
+    width: 840px;
+    height: 203px;
+    background: #edf0f4;
+}
+
+
+/*LINK BOTTOM 1*/
+
+.header-32 {
+    width: 127px;
+    height: 28px;
+    color: #3b4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+
+/*LINK BOTTOM 2*/
+
+.header-34 {
+    width: 224px;
+    height: 28px;
+    color: #3b4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+
+/*LINK BOTTOM 3 */
+
+.header-36 {
+    width: 224px;
+    height: 28px;
+    color: #3b4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+
+/*LINK BOTTOM 4*/
+
+.header-38 {
+    width: 224px;
+    height: 28px;
+    color: #3b4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: left;
+}
