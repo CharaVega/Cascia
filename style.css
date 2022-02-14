@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --aquagreen: #212529;
+    --lighttan: #EFECE2;
+    --white: #FFFFFF; 
+}
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0; padding:0;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear; 
+}
+
+*::selection{
+    background: var(--)
+}
