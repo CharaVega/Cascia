@@ -1,115 +1,94 @@
-<!--
--->
-
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="Gigi restaurant" content="width=device-width, initial-scale=1.0">
+    <title>Gigi's Restaurant Paris Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
 
 <body>
 
     <nav class="navbar">
-        <a href="Menu Bars" class= "rectangle-21"> </a>
-        <a href="#Find A Table" class = "rectangle-20" >FIND A TABLE</a>
-        <a href="#Order Online" class = "rectangle-19">ORDER ONLINE</a>
-        <a href="(06) 7984-3419" class= "rectangle-18">(06)7984-3419</a>
+        <a href="Phone Number" class= "menuicon-findatable">(06)7984-3419</a>
+        <a href="#Find A Table" class = "menuicon-findatable" >FIND A TABLE</a>
+        <a href="#Order Online" class = "menuicon-findatable">ORDER ONLINE</a>
+        <a href="(06) 7984-3419" class= "menuicon-threelines"><span class="material-icons-outlined">
+            </span>three lines here </a>
     </nav> 
+
+
+
     <style>
+        /*for the LATO font*/
+    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-        .table-rows-icon-1 {
-            width: 28px;
-            height: 28px;
-            background: #000000;
-        }
+    /*LOGO TOP LEFT*/
+    .img logo{
+        object-fit: scale-down;
+        display: inline-flex;
+    }
 
-
-        /*MENU ICON RECT1*/
-
-        .rectangle-21 {
-            width: 54px;
-            height: 50px;
-            padding: 8px 8px 8px 8px;
-            background: #ffffff;
-            border-color: #000000;
+    .navbar a{
+        text-decoration: none;
+            font-family: 'Lato',sans-serif; 
+            font-size: 13px; 
+            padding: 22px 21px 21px;
+    }
+    
+    /*MENI ICON THREE LINES RECT2*/
+    .menuicon-threelines{
+            width: 59px;
+            height: 58px;
+            display: block;
+            display: inline-flex;
+            background: #0F518E00;
+            border-color: #FFFFFF;
             border-width: 1px;
             border-style: solid;
+            padding: 22px 21px 21px;
+            float: right;
+            position: sticky;
+            text-decoration: none;         
         }
+    /* to make hyperlink white otherwise hyperlink turns blue*/
+            .navbar a:link {
+            color: #ffffff;
+        }
+        
+    
+    /*MENU ICON RECT1*/
 
-
-        /*MENU ICON RECT2*/
-
-        .rectangle-20 {
-            width: 128px;
-            height: 50px;
-            padding: 8px 8px 8px 8px;
-            background: #ffffff;
-            border-color: #000000;
+        .menuicon-findatable {
+            width: 184px;
+            height: 58px;
+            display: block;
+            display: inline-flex;
+            background: #0F518E00;
+            border-color: #FFFFFF;
             border-width: 1px;
             border-style: solid;
+            padding: 22px 21px 21px;
+            float: right;
+            position: sticky;
+            text-decoration: none;
         }
 
-
-        /*TEXT RECT2 MENU ICON*/
-
-        .paragraph-16 {
-            width: 98px;
-            height: 19px;
-            color: #798da3;
-            font-family: "Open Sans";
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.1;
+        /*TEXT INSIDE MENU ICON RECT1*/
+        .menuicon-findatable a {
+            float: center;
+            text-decoration: none;
+            color: #FFFFFF;
             text-align: center;
+            padding: 18px;
         }
 
 
-        /*MENU RECT3*/
-
-        .rectangle-19 {
-            width: 120px;
-            height: 50px;
-            padding: 8px 8px 8px 8px;
-            background: #ffffff;
-            border-color: #000000;
-            border-width: 1px;
-            border-style: solid;
+        /*MAIN PAGE COVER IMAGE*/
+        body{
+            background-image: url(https://gigi-restaurant.com/wp-content/uploads/2021/12/Gigi-Val-dIsère@RomainRicard-17.jpg);
+            background-size: cover;
+            background-position: center;
         }
 
 
-        /*TEXT RECT3*/
-
-        .paragraph-17 {
-            width: 98px;
-            height: 19px;
-            color: #798da3;
-            font-family: "Open Sans";
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.1;
-            text-align: center;
-        }
-
-
-        /*MENU RECT4*/
-
-        .rectangle-18 {
-            width: 126px;
-            height: 50px;
-            padding: 8px 8px 8px 8px;
-            background: #ffffff;
-            border-color: #000000;
-            border-width: 1px;
-            border-style: solid;
-        }
-
-
-        /*TEXT RECT4*/
-
-        .paragraph-27 {
-            width: 98px;
-            height: 19px;
-            color: #798da3;
-            font-family: "Open Sans";
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.1;
-            text-align: center;
-        }
     </style>
 </body>
