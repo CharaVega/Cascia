@@ -1,53 +1,70 @@
-<script>
+<script lang= "ts">
 	import '../app.css';
-	import Header from "$lib/header/Header.svelte";
-	import { set_style } from 'svelte/internal';
-	export function scroll_modifier(){
-		let head=document.querySelectorAll("wrapper-navbar");
-		let state=window.scrollY;
-		if(state){
-			for(var i=0; i<head.length; i++){
-				set_style(head, "background-color", "white");
+	//import Header from "$lib/header/Header.svelte";
+	//import { set_style } from 'svelte/internal';	
+	$:{
+		function scroll_modifier(){
+			let userHasScrolled = false; 
+			let head=document.querySelectorAll(".menu-rect"); 
+			window.onscroll = (e) => {  
+				userHasScrolled = true;  
 			}
-		};
+			if(userHasScrolled){
+				for(var i=0;i<head.length;i++){
+					head[i].setAttribute("style", "background-color:white")
+				}
+			}
+		}
 	}
 </script>
 
 
 <!--
-<div class="wrapper-logo">
-                    <a href="https://kit.svelte.dev">
-                        <img src="../../../static/logo.png" alt="SvelteKit" class="logo bg-blend-difference mix-blend-darken"/>
-                    </a>
-                </div>-->
+	<div class="wrapper-logo">
+						<a href="https://kit.svelte.dev">
+							<img src="../../../static/logo.png" alt="SvelteKit" class="logo bg-blend-difference mix-blend-darken"/>
+						</a>
+					</div>
+-->
 <nav class="wrapper-navbar">
 	<!--<a href="(06) 7984-3419" class = "menuicon-threelines menu-rect"><span class="material-icons-outlined">
 	</span></a>-->
-	<a href="Phone Number" class = "menuicon-findatable menu-rect">(06)7984-3419</a>
-	<a href="#Find A Table" class = "menuicon-findatable menu-rect" >FIND A TABLE</a>
-	<a href="#Order Online" class = "menuicon-findatable menu-rect">ORDER </a>		
+	<button  class = "menuicon-findatable menu-rect">
+		<a href="Phone Number" class="text-top-bar">
+			(06)7984-3419
+		</a>
+	</button>
+	<button  class = "menuicon-findatable menu-rect" >
+		<a href="#Find A Table" class="text-top-bar">
+			FIND A TABLE
+		</a>
+	</button>
+	<button  class = "menuicon-findatable menu-rect">
+		<a href="#Order Online" class="text-top-bar">
+			ORDER 
+		</a>	
+	</button>
 </nav>
 
 <slot/>
 
 
 <div class="bottom-image-wrapper">
-	<img src="" alt ="bottom image"class="img-bottom"/>
+	<!-- svelte-ignore a11y-img-redundant-alt -->
+	<img src="../../static/bottom-img.png" alt ="bottom image" class="img-bottom"/>
 </div>
 <footer class="wrapper-footer">
-	
 	<div class="first-level">
 		<div class="wrapper-social-img">
-			<img src="" alt="facebook logo" class="fb-log"/>
-			<img src="../../static/twt.png" alt="instagram logo" class="insta-logo">
-			<img src="" alt="tripadvisor logo" class="tripadv-logo"/>
+			<img src="../../static/fb-logo.png" alt="facebook logo" class="fb-logo"/>
+			<img src="../../static/insta-logo.png" alt="instagram logo" class="insta-logo">
+			<img src="../../static/tripadv-logo.png" alt="tripadvisor logo" class="tripadv-logo"/>
 		</div>
-		<div class="wrapper-info">
-			<a href="#something" class="address"> 15, Les Linandes Orange, Cergy, Ile de France, 95100 </a>
+		<div class="second-level">
+			<div class="wrapper-info">
+				<a href="#something" class="address"> 15, Les Linandes Orange, Cergy, Ile de France, 95100 </a>
+			</div>
 		</div>
-	</div>
-	<div class="second-layer">
-
 	</div>
 </footer>
 
@@ -84,41 +101,57 @@
         margin:auto;
     }
     .menuicon-findatable {
-            width: 184px;
-            height: 58px;
-            display: block;
-            display: inline-flex;
-            /*background: #0F518E00;*/
-            border-color: #FFFFFF;
-            border-width: 1px;
-            border-style: solid;
-            padding: 22px 21px 21px;
-            float: right;
-            position: sticky;
-            text-decoration: none;
-        }
+        width: 184px;
+        height: 58px;
+        display: block;
+        display: inline-flex;
+        /*background: #0F518E00;*/
+        border-color: #FFFFFF;
+        border-width: 2px;
+        border-style: solid;
+        padding: 22px 21px 21px;
+        float: right;
+        position: sticky;
+        text-decoration: none;
+    }
+	.text-top-bar{
+		color: white;
+	}
 	.bottom-image-wrapper{
 		display:flex;
 		flex-flow:row flex;
 		justify-content:center;
+	}
+	.img-bottom{
+		mix-blend-mode: difference ;
+		background-blend-mode: hard-light ;
+		border-radius: 7%;
 	}
 	.wrapper-footer{	
 		display: flex;
 		flex-flow:column flex;
 		justify-content: center;
 		row-gap: 100%;
+		/*background-image: url("../../static/bg-bottom.png");
+		background-size: cover;*/
 	}
 	.wrapper-social-img{
 		display:flex;
 		flex-flow:row flex;
 		justify-content: space-evenly;
 	}
-	.insta-logo{
+	.insta-logo,
+	.fb-logo,
+	.tripadv-logo{
 		mix-blend-mode: difference;
 		background-blend-mode: difference;
+		border-radius: 7%;
 	}
-	.second-layer{
+	.wrapper-info{
 		background-image: url("../../static/bg-bottom.png");
-		background-size: cover;
+		background-size:cover;
+		display: flex;
+		flex-flow:row flex;
+		justify-content: center;
 	}
 </style>
