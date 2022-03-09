@@ -1,22 +1,23 @@
 <script context="module" lang="ts">
-	//export const prerender = true;
-	//export const bgImage = "../../static/backgroundTopMainPage.png";
-
-	/*import Header from "$lib/header/Header.svelte";
-	import { space } from "svelte/internal";*/
-//import Footer from "$lib/footer/Footer.svelte"
-
+	import { readTableData} from '$lib/items/assets';
+	import { checkAvailability} from '$lib/items/assets';
+	
 </script>
 
 <svelte:head>
 	<title>Home</title>
 </svelte:head>
 
-<body>
-<div class="wrapper">
+<!--
+{#await checkAvailability()}
+
+{/await}
+-->
+
+<div class="wrapper flex flex-wrap flex-row text-center font-bold">
 	<!--<Header></Header>-->
 	<section class="first blocks">
-		<div class="wrapper-block-1">
+		<div class="wrapper-block-1 flex flex-wrap flex-row text-center font-bold justify-center">
 			<!--<div class="wrapper-logo">
                 <a href="https://kit.svelte.dev">
                     <img src="../../../static/logo.png" alt="SvelteKit" class="logo bg-blend-difference mix-blend-darken"/>
@@ -29,7 +30,7 @@
 	</section>
 
 	<section class="second blocks">
-		<div class="wrapper-block-2">
+		<div class="wrapper-block-2 flex flex-wrap flex-row text-center font-bold justify-center">
 			<div class="txt-block-2">
 				<p>
 					Katione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui mopahidsghjsbjhbdjkhfd sajdsk d bdfkj sjasljjaosidhaf jdkbsjdfbao apdajsdlsj fd bawpa dguasidhsajksda pdsdjiaofehdfab adlskSDIWDHMAISH BDao oJS IObkbMSDJFNS JKS SIIAHDBkjlJSHKAW9 0EU3Q9HKJ33BO31 81 893 8FUIKDDAKJBD FBHFEBWF UE0Wss8dayhlnn wiojds iojdhfsius8 s98a0 as9dw '0 deò rjk4n33hjdwnsksq'
@@ -43,7 +44,7 @@
 	</section>
 
 	<section class="third blocks">
-		<div class="wrapper-block-3">		
+		<div class="wrapper-block-3 flex flex-wrap flex-row text-center font-bold justify-center">		
 			<div class="block-3-menu-image-1">
 				<a href="menu-1 wrapper-link-block-3" class="menu-link">
 					<p class="block-3-text">
@@ -74,7 +75,7 @@
 
 <!--<Footer></Footer>-->
 
-</body>
+
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
 
@@ -92,12 +93,13 @@
 		font-style: normal;
 		font-display: swap;
 	}
+	/*
 	.wrapper {
         display: flex;  
         flex-flow: row wrap;
         font-weight: bold;
         text-align: center; 
-    }
+    }*/
 	.blocks {
 		width:100%;
 		height:100%;
@@ -109,9 +111,9 @@
 		background-image: url(https://gigi-restaurant.com/wp-content/uploads/2021/12/Gigi-Val-dIsère@RomainRicard-17.jpg);
 		background-size: cover;
         background-position: center;
-        display:flex;
+        /*display:flex;
 		flex-direction: row flex;
-		justify-content: center;
+		justify-content: center;*/
 		z-index:6;
     }
 	.catch-phrase{
@@ -133,9 +135,9 @@
 		z-index: 6;
 	}*/
 	.wrapper-block-2{
-		display:flex;
+		/*display:flex;
 		flex-direction: row flex;
-		justify-content: center;
+		justify-content: center;*/
 		background-image: url("../../static/edits/svg/threelines.svg");
 		background-size:cover;
 		width:100%;
@@ -161,9 +163,6 @@
 		border-radius: 7%;		
 	}
 	.wrapper-block-3{
-		display: inline-flex;
-		flex-flow:row flex;
-		justify-content: center;
 		width:100%;
 		height:50%;
 	}

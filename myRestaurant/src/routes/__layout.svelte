@@ -132,13 +132,15 @@
 		flex-flow:column flex;
 		justify-content: center;
 		row-gap: 100%;
-		/*background-image: url("../../static/bg-bottom.png");
-		background-size: cover;*/
+		background-image: url("../../static/bg-bottom.png");
+		background-size: cover;
 	}
 	.wrapper-social-img{
 		display:flex;
 		flex-flow:row flex;
 		justify-content: space-evenly;
+		margin-top: 15%;
+		margin-bottom: 15%;
 	}
 	.insta-logo,
 	.fb-logo,
@@ -148,10 +150,12 @@
 		border-radius: 7%;
 	}
 	.wrapper-info{
-		background-image: url("../../static/bg-bottom.png");
-		background-size:cover;
+		/*background-image: url("../../static/bg-bottom.png");
+		background-size:cover;*/
 		display: flex;
 		flex-flow:row flex;
 		justify-content: center;
+		margin-top: 15%;
+		margin-bottom: 30%;
 	}
 </style>
