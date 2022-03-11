@@ -1,8 +1,14 @@
 <script lang= "ts">
 	import '../app.css';
+	import {loginStatus} from "$lib/supabase/login"
+	const l = loginStatus();//contains a boolean value whether the user is logged in or not
+
+
+
 	//import Header from "$lib/header/Header.svelte";
 	//import { set_style } from 'svelte/internal';	
-	$:{
+	/*
+	$:{//This is for adding the style once the page is scrolled
 		function scroll_modifier(){
 			let userHasScrolled = false; 
 			let head=document.querySelectorAll(".menu-rect"); 
@@ -15,20 +21,25 @@
 				}
 			}
 		}
-	}
+	}/*
+	import Auth from "$lib/Auth.svelte"
+	import {user} from "$lib/supabase/auth";
+	import supabase from '$lib/db';
+	console.log(supabase.auth.user);
+	user.set(supabase.auth.user()); 
+
+	supabase.auth.onAuthStateChange((_, session)=>{
+		user.set(session?.user);
+		if(session?.user){
+			//doSomething
+		}
+	})*/
 </script>
 
 
-<!--
-	<div class="wrapper-logo">
-						<a href="https://kit.svelte.dev">
-							<img src="../../../static/logo.png" alt="SvelteKit" class="logo bg-blend-difference mix-blend-darken"/>
-						</a>
-					</div>
--->
+
+
 <nav class="wrapper-navbar">
-	<!--<a href="(06) 7984-3419" class = "menuicon-threelines menu-rect"><span class="material-icons-outlined">
-	</span></a>-->
 	<button  class = "menuicon-findatable menu-rect">
 		<a href="Phone Number" class="text-top-bar">
 			(06)7984-3419
@@ -44,16 +55,25 @@
 			ORDER 
 		</a>	
 	</button>
+	
+	<button  class = "menuicon-findatable menu-rect">
+		<a href="../login" class="text-top-bar">
+			LOGIN 
+		</a>	
+	</button>
 </nav>
 
 <slot/>
 
-
+<!--
 <div class="bottom-image-wrapper">
-	<!-- svelte-ignore a11y-img-redundant-alt -->
 	<img src="../../static/bottom-img.png" alt ="bottom image" class="img-bottom"/>
-</div>
+	
+</div>-->
 <footer class="wrapper-footer">
+	<!--<div>
+		<Auth/>
+	</div>-->
 	<div class="first-level">
 		<div class="wrapper-social-img">
 			<img src="../../static/fb-logo.png" alt="facebook logo" class="fb-logo"/>
@@ -80,23 +100,25 @@
         justify-content: flex-end;
 		z-index:10;
     }
+	
     
     .menu-rect{
         padding:auto;
         size:auto;
         width:50%;
         height:100%;
-        color:white;
+        color:rgb(53, 50, 68);
         margin:auto;
+		background-color: rgb(250, 246, 244);
     }
     .menuicon-findatable {
         /*background: #0F518E00;*/
-        border-color: #FFFFFF;
+        border-color: rgb(250, 246, 244);
         border-width: auto;
         border-style: solid;
         padding: auto;
         text-decoration: none;
-		border-radius: 3%;
+		border-radius: 7%;
         float:left;
         margin:auto;
     }
@@ -106,7 +128,7 @@
         display: block;
         display: inline-flex;
         /*background: #0F518E00;*/
-        border-color: #FFFFFF;
+        border-color: rgb(53, 50, 68);
         border-width: 2px;
         border-style: solid;
         padding: 22px 21px 21px;
@@ -115,8 +137,9 @@
         text-decoration: none;
     }
 	.text-top-bar{
-		color: white;
+		color: rgb(3, 4, 26);
 	}
+	/*
 	.bottom-image-wrapper{
 		display:flex;
 		flex-flow:row flex;
@@ -126,7 +149,7 @@
 		mix-blend-mode: difference ;
 		background-blend-mode: hard-light ;
 		border-radius: 7%;
-	}
+	}*/
 	.wrapper-footer{	
 		display: flex;
 		flex-flow:column flex;

@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
-	import { readTableData} from '$lib/items/assets';
-	import { checkAvailability} from '$lib/items/assets';
+	import { readTableData} from '$lib/supabase/assets';
+	import { checkAvailability} from '$lib/supabase/assets';
 	
 </script>
 
@@ -9,9 +9,9 @@
 </svelte:head>
 
 <!--
-{#await checkAvailability()}
+	{#await checkAvailability()}
 
-{/await}
+	{/await}
 -->
 
 <div class="wrapper flex flex-wrap flex-row text-center font-bold">
