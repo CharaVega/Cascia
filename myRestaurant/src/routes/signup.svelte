@@ -1,28 +1,17 @@
 <script>
     import {supabase} from "../supabase.js";
-    import {loginStatus} from "$lib/supabase/login";
+    import {user} from "$lib/supabase/auth";
     let loading = false;
     let  emailSignin, passwordSignin, confPasswdSignin;
-    /*   
-    const toLogin = async () =>{
-        console.log("Redirecting to login page...");
-        return {
-            redirect: { Location: '/login' },
-            status: 302
-        }
-    }*/
     const handleSignUp = async () => {
         if(passwordSignin===confPasswdSignin){
             try {
                 loading = true;
                 console.log(emailSignin);
-                //Signing up the user
                 const {error} = await supabase.auth.signUp({
                     email: emailSignin, 
                     password: passwordSignin
                 });
-                //here we should redirect to the other page it does not work though
-                //toLogin();
                 if(error){
                     throw error;
                 }

@@ -1,7 +1,13 @@
 <script lang= "ts">
 	import '../app.css';
-	import {loginStatus} from "$lib/supabase/login"
-	const l = loginStatus();//contains a boolean value whether the user is logged in or not
+	//import {loginStatus} from "$lib/supabase/login"
+	import supabase from "$lib/db";
+	/*const l = loginStatus();//contains a boolean value whether the user is logged in or not
+	console.log("Any User connected? ", l);
+	const logOut = async () => {
+		console.log("Loggin out...");
+		supabase.auth.signOut();
+	}*/
 
 
 
@@ -46,12 +52,12 @@
 		</a>
 	</button>
 	<button  class = "menuicon-findatable menu-rect" >
-		<a href="#Find A Table" class="text-top-bar">
+		<a href="../book" class="text-top-bar">
 			FIND A TABLE
 		</a>
 	</button>
 	<button  class = "menuicon-findatable menu-rect">
-		<a href="#Order Online" class="text-top-bar">
+		<a href="../book" class="text-top-bar">
 			ORDER 
 		</a>	
 	</button>
@@ -149,7 +155,8 @@
 		mix-blend-mode: difference ;
 		background-blend-mode: hard-light ;
 		border-radius: 7%;
-	}*/
+	}
+	*/
 	.wrapper-footer{	
 		display: flex;
 		flex-flow:column flex;

@@ -16,9 +16,12 @@
                 email :emailLogin,
                 password : passwordLogin
             });
-            if(error) throw error;
-            console.log(error);
-            alert("Check the email used for the login");
+            if(error){
+                console.log(error);
+                alert("Check the email used for the login");
+                throw error;
+            }
+            else console.log("The connected user is :", supabase.auth.user());
         }catch(err){
             console.error(err);
             alert(err.error_description || err.message);
@@ -26,8 +29,8 @@
             loading = false;
         }
     }
-    console.log("The connected user is :", supabase.auth.user())
 	user.set(supabase.auth.user()? true : false); //I guess that this line sets the user (writable) to a bool
+    console.log("userSupabaseObject", user);
     //what happens when the user logs in or logs out
 	/*supabase.auth.onAuthStateChange((event, session)=>{
 		user.set(supabase.auth.user()? true : false);
