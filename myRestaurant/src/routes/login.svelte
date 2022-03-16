@@ -1,18 +1,17 @@
 <script>
 	//import Auth from "$lib/Auth.svelte"
-	import {user} from "$lib/supabase/auth";
+    import {goto} from "$app/navigation";
+	import {user} from "$lib/stores/authStore";
 	//import supabase from '$lib/db';
 	//console.log(supabase.auth.user);
     import {supabase} from "../supabase.js";
     let loading = false;
     let emailLogin, passwordLogin;
-    //Figure out better what this does
     const handleLogin = async () => {
         try {
             loading = true;
-            console.log(emailLogin);
             //logging in the user
-            const {error} = await supabase.auth.signIn({//Signing in with supabase, just call this function
+            const {error} = await supabase.auth.signIn({
                 email :emailLogin,
                 password : passwordLogin
             });
@@ -21,7 +20,13 @@
                 alert("Check the email used for the login");
                 throw error;
             }
-            else console.log("The connected user is :", supabase.auth.user());
+            else{ 
+                console.log("The connected user is :", supabase.auth.user());
+                //alert("Successfully logged in");
+	            user.set(true);
+                console.log(user);
+                goto("/book");
+            }
         }catch(err){
             console.error(err);
             alert(err.error_description || err.message);
@@ -29,7 +34,6 @@
             loading = false;
         }
     }
-	user.set(supabase.auth.user()? true : false); //I guess that this line sets the user (writable) to a bool
     console.log("userSupabaseObject", user);
     //what happens when the user logs in or logs out
 	/*supabase.auth.onAuthStateChange((event, session)=>{
@@ -44,6 +48,11 @@
 	})*/
 </script>
 
+
+<svelte:head>
+	<title>Sign in</title>
+</svelte:head>
+
 <div class="flex flex-col justify-center">
     <h1 class="txt-top">
         Join our community
@@ -54,7 +63,7 @@
             <h1 class=header-log-in>
                 Log In
             </h1>
-            <label  class="font-bold text-grey-800 text-center label"for = "email">
+            <label  class="font-bold text-grey-800 text-center label" for = "email">
                 Email
             </label>
             <input class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
@@ -69,9 +78,9 @@
                 Submit
             </button>
             <a href="../signup">
-                <h3 class="font-bold text-grey-800 text-center label-link">
+                <p class="font-bold text-grey-800 text-center label-link">
                     Click here for signing up if it's your first time here
-                </h3>    
+                </p>    
             </a>
         </div>
 

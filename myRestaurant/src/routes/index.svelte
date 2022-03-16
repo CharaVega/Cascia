@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
-	import { readTableData} from '$lib/supabase/assets';
-	import { checkAvailability} from '$lib/supabase/assets';
+	import { readTableData} from '$lib/assets';
+	import { checkAvailability} from '$lib/assets';
 	
 </script>
 
