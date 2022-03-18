@@ -29,7 +29,7 @@
 
 <div class="flex flex-col justify-center">
 	<div class ="flex flex-row justify-center">
-		<img src="../../static/favicon.png" class="logo" alt="logo" on:click|preventDefault = {redirectToHome}>	
+		<img src="../../static/LOGO.svg" class="logo" alt="logo" on:click|preventDefault = {redirectToHome}>	
 	</div>
 	<nav class="wrapper-navbar flex flex-row justify-center">
 		<button  class = "menuicon-findatable menu-rect">
@@ -71,9 +71,9 @@
 	</div>-->
 	<div class="first-level">
 		<div class="wrapper-social-img flex flex-row justify-evenly">
-			<img src="../../static/fb-logo.png" alt="facebook logo" class="fb-logo mix-blend-difference bg-blend-difference"/>
-			<img src="../../static/insta-logo.png" alt="instagram logo" class="insta-logo">
-			<img src="../../static/tripadv-logo.png" alt="tripadvisor logo" class="tripadv-logo"/>
+			<img src="../../static/fb-icon.svg" alt="facebook logo" class="fb-logo"/>
+			<img src="../../static/insta-icon.svg" alt="instagram logo" class="insta-logo">
+			<img src="../../static/trip-icon.png" alt="tripadvisor logo" class="tripadv-logo"/>
 			{#if $user}<botton on:click|preventDefault = {handleLogOut}> log out </botton>{/if}
 		</div>
 		<div class="second-level">
@@ -86,9 +86,9 @@
 
 <style>
 	.logo{
-		margin-top:1.5%;
-		width:5%;
-		height:5%;
+		margin-top:2%;
+		width:15%;
+		height:15%;
 	}
 	.wrapper-navbar{
 		column-gap: 10%;
@@ -157,13 +157,12 @@
 	}
 	*/
 	.text-top-bar{
-		color: rgb(3, 4, 26);
+		color: #7898b8;
 		/*We have to choose the right fonts and styles here*/
 	}
 	.wrapper-footer{
 		row-gap: 100%;
-		/*background-image: url("../../static/bg-bottom.png");
-		background-size: cover;*/
+		background-color: #ffffff;
 	}
 	.wrapper-social-img{
 		margin-top: 15%;
@@ -172,12 +171,17 @@
 	.insta-logo,
 	.fb-logo,
 	.tripadv-logo{
-		mix-blend-mode: difference;
-		background-blend-mode: difference;
 		border-radius: 7%;
+		width: 10%;
+		height: 10%;
 	}
 	.wrapper-info{
 		margin-top: 15%;
 		margin-bottom: 30%;
+	}
+
+	.address{
+		color: #7898b8; 
+
 	}
 </style>
