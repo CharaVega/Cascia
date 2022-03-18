@@ -2,9 +2,8 @@
 	//import Auth from "$lib/Auth.svelte"
     import {goto} from "$app/navigation";
 	import {user} from "$lib/stores/authStore";
-	//import supabase from '$lib/db';
+	import supabase from '$lib/db';
 	//console.log(supabase.auth.user);
-    import {supabase} from "../supabase.js";
     let loading = false;
     let emailLogin, passwordLogin;
     const handleLogin = async () => {
@@ -25,6 +24,7 @@
                 //alert("Successfully logged in");
 	            user.set(true);
                 console.log(user);
+
                 goto("/book");
             }
         }catch(err){

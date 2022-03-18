@@ -43,8 +43,8 @@
 			</a>
 		</button>
 		<button  class = "menuicon-findatable menu-rect">
-			<a href="../book" class="text-top-bar">
-				ORDER 
+			<a href="../menus" class="text-top-bar">
+				MENUS 
 			</a>	
 		</button>	
 		{#if !$user}
