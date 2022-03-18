@@ -73,30 +73,30 @@
 
 	<section class="third blocks">
 		<div class="wrapper-block-3 flex flex-wrap flex-row text-center font-bold justify-center">		
-			<div class="block-3-menu-image-1">
-				<a href="menu-1 wrapper-link-block-3" class="menu-link">
-					<p class="block-3-text">
-						Lunch and Dinner
-					</p>
-					<img src="https://f.hubspotusercontent30.net/hub/20410430/hubfs/raw_assets/public/bodrum/images/placeholders/120889909_907612126432046_8457132744148233001_n.jpg?width=265&height=443&name=120889909_907612126432046_8457132744148233001_n.jpg" alt="menu visualize" class="menu-img-blck-3">
-				</a>			
-			</div>
-			<div class="block-3-menu-image-2">
-				<a href="menu-2 wrapper-link-block-2" class="menu-link">
-					<p class="block-3-text">
-						Wines and beverages
-					</p>
-					<img src="https://f.hubspotusercontent30.net/hub/20410430/hubfs/raw_assets/public/bodrum/images/placeholders/120889909_907612126432046_8457132744148233001_n.jpg?width=265&height=443&name=120889909_907612126432046_8457132744148233001_n.jpg" alt="menu visualize" class="menu-img-blck-3">
-				</a>
-			</div>
-			<div class="block-3-menu-image-3">
-				<a href="menu-3 wrapper-link-block-2" class="menu-link">
-					<p class="block-3-text">
-						Breakfast and Bakeries
-					</p>
-					<img src="https://f.hubspotusercontent30.net/hub/20410430/hubfs/raw_assets/public/bodrum/images/placeholders/120889909_907612126432046_8457132744148233001_n.jpg?width=265&height=443&name=120889909_907612126432046_8457132744148233001_n.jpg" alt="menu visualize" class="menu-img-blck-3">
-				</a>
-			</div>
+				<div class="block-3-menu-image-1">
+					<a href="menu-1 wrapper-link-block-3" class="menu-link">
+						<p class="boxesunderpics">
+							LUNCH AND DINNER
+						</p>
+						<img src="../../static/fooddisplayone.png" alt="menu visualize" class="menu-img-blck-3">
+					</a>			
+				</div>
+				<div class="block-3-menu-image-2">
+					<a href="menu-2 wrapper-link-block-2" class="menu-link">
+						<p class="boxesunderpics">
+							WINES AND BEVERAGES
+						</p>
+						<img src="../../static/fooddisplaytwo.png" alt="menu visualize" class="menu-img-blck-3">
+					</a>
+				</div>
+				<div class="block-3-menu-image-3">
+					<a href="menu-3 wrapper-link-block-2" class="menu-link">
+						<p class="boxesunderpics">
+							AFTERNOON TEA
+						</p>
+						<img src="../../static/fooddisplaythree.png" alt="menu visualize" class="menu-img-blck-3">
+					</a>
+				</div>
 		</div>
 	</section>
 </div>
@@ -131,6 +131,9 @@
 	.blocks {
 		width:100%;
 		height:100%;
+	}
+	.link-box{
+		size:15%;
 	}
 	.wrapper-block-1 {
 		/*position:relative;*/
@@ -178,13 +181,17 @@
 		width:20%;
 		height:70%;
 		position:relative;
-		font-family: 'Playfair Display', serif;
-		font-weight: 900;
+		font-family: 'Playfair Display';
+		font-weight: bold;
 		font-size: 17px;
 	}
 
 	.text-second-block{
 		color:#6a85a2;
+		font-family: "Playfair Display",serif;
+		font-style: italic;
+		font-weight:600;
+    	font-size: 17px;
 	}
 
 	.second-and-half-blocks{
@@ -200,6 +207,7 @@
     	font-size: 44px;
     	letter-spacing: 5px;
 		padding-top: 5%;
+		padding-bottom: 5%;
 	}
 
 	.boxreview{
@@ -216,8 +224,8 @@
 		font-family: "Playfair Display",serif;
 		font-weight: 100;
     	font-size: 17px;
-		margin-top: 5%;
-		margin-bottom:0%;
+		margin-top: 3%;
+		margin-bottom:3%;
 	}
 
 	.fivestars{
@@ -265,11 +273,16 @@
 		float:right;
 		border-radius: 7%;		
 	}
+
+	/*.third blocks{
+		background-color: #6a8aaa;
+	}*/
+
 	.wrapper-block-3{
 		background-image: url("../../static/edits/svg/threelines.svg");
 		background-size:cover;
 		width:100%;
-		height:100%;
+		height:50%;
 	}
 
 	.wrapper-link-block-3{
@@ -286,32 +299,50 @@
 	.block-3-menu-image-2,
 	.block-3-menu-image-3{
 		flex-basis:20%;
-		margin-left:auto;
-		margin-right:auto;
-		margin-top:45%;
-		margin-bottom: 45%;
-		size:100%;
-		border-radius: 7%;
+		margin-left:2%;
+		margin-right:2%;
+		margin-top:25%;
+		margin-bottom: 25%;
+		size:15%;
+		border-radius: 3%;
 	}
 	.block-3-text{
-		font-family:Lato;
 		text-align:center;
 		margin-bottom:5%;
 		position:relative;
+		font-family: 'Playfair Display';
+		font-weight: bold;
+		font-size: 17px;
+		color: #6a8aaa;
+		font-style: italic;
 	}
-	
+
+	.boxesunderpics {
+    	fill: #FFFFFF;
+    	color: #6a8aaa;
+    	border-style: solid;
+    	border-width: 3px 3px 3x 3px;
+		margin-bottom: 5%;
+		margin-top: 5%;
+		font-family: 'Lato';
+		font-weight: 800;
+		font-size: 13px;
+		letter-spacing: 3px;
+		display: inline-block;
+    	line-height: 1;
+    	padding: 14px 28px;
+    	-webkit-border-radius: 3px;
+    	border-radius: 3px;
+    	text-align: center;
+    	-webkit-transition: all .3s;
+    	-o-transition: all .3s;
+    	transition: all .3s;
+	}
 	.menu-img-blck-3{
 		border-radius: 7%;
 	}
 	/*.block-3-menu-image-1{
-		display: inline-flexbox;
-		margin-left:auto;
-		margin-right:auto;
-		font-family:cursive;
-		width:100%;
-		height:100%;
-		position:relative;
-		margin-top:45%;
+		background-color: #6a8aaa;
 
 	}
 	.block-3-menu-image-2{
@@ -338,6 +369,7 @@
 		margin-bottom:45%;
 		margin-top:45%;
 	}*/
+
 	.block-3-text{
 		text-align: center;
 		font-size: 100%;

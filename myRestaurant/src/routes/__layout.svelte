@@ -17,6 +17,7 @@
 			}
 			else{
 				user.set(false);
+				goto("./");
 				alert("Logged out");
 			}
 		}catch(err){
@@ -74,12 +75,14 @@
 			<img src="../../static/fb-icon.svg" alt="facebook logo" class="fb-logo"/>
 			<img src="../../static/insta-icon.svg" alt="instagram logo" class="insta-logo">
 			<img src="../../static/trip-icon.png" alt="tripadvisor logo" class="tripadv-logo"/>
-			{#if $user}<botton on:click|preventDefault = {handleLogOut}> log out </botton>{/if}
 		</div>
 		<div class="second-level">
 			<div class="wrapper-info flex flex-row justify-center">
 				<a href="#something" class="address"> 15, Les Linandes Orange, Cergy, Ile de France, 95100 </a>
 			</div>
+		</div>
+		<div class="flex flex-row justify-center log-out-button">	
+			{#if $user}<botton class = "log-out-botton text-center" on:click|preventDefault = {handleLogOut}> Logout </botton>{/if}
 		</div>
 	</div>
 </footer>
@@ -165,23 +168,48 @@
 		background-color: #ffffff;
 	}
 	.wrapper-social-img{
-		margin-top: 15%;
-		margin-bottom: 15%;
+		margin-top: 5%;
+		margin-bottom: 5%;
 	}
-	.insta-logo,
-	.fb-logo,
+
+	.fb-logo{
+		width: 6%;
+		height: 6%;
+		padding-top: 4%;
+	}
+
 	.tripadv-logo{
 		border-radius: 7%;
-		width: 10%;
-		height: 10%;
+		width: 4%;
+		height: 4%;
+		padding-top: 5%;
 	}
+
+	.insta-logo{
+		width: 4%;
+		height: 4%;
+		padding-top: 5%;
+	}
+
 	.wrapper-info{
-		margin-top: 15%;
-		margin-bottom: 30%;
+		margin-top: 5%;
+		margin-bottom: 10%;
 	}
 
 	.address{
 		color: #7898b8; 
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-style:italic;
+		font-size: 17px;
+	}
 
+	.log-out-botton{
+		color: #7898b8; 
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-style:italic;
+		font-size: 17px;
+		padding-bottom: 5%;
 	}
 </style>

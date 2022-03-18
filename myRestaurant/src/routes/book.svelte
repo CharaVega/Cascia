@@ -47,7 +47,7 @@
                     <label for="nPeople" class="text-center label">
                         Select the number of people
                     </label>
-                    <input type="number" class="input" name="nPeople" min="1" max="15"bind:value = {nPeople}/>
+                    <input type="number" class="input" name="nPeople" min="1" max="15" bind:value = {nPeople}/>
                 </div>
                 <button class= "w-full shadow-sm rounded button submit"type = "Submit">
                     Submit
