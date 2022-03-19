@@ -44,7 +44,7 @@
 			</a>
 		</button>
 		<button  class = "menuicon-findatable menu-rect">
-			<a href="../menus" class="text-top-bar">
+			<a href="../menu" class="text-top-bar">
 				MENUS 
 			</a>	
 		</button>	

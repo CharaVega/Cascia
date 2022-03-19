@@ -49,19 +49,17 @@
 </script>
 
 
+  
 <svelte:head>
 	<title>Sign in</title>
 </svelte:head>
 
+
 <div class="flex flex-col justify-center">
-    <h1 class="txt-top">
-        Join our community
-    </h1>
-    <h2 class="text-center sub-header"> subsuhdsnajsnj aosjdjbd </h2>
     <form on:submit|preventDefault = {handleLogin} class="flex flex-column justify-between">       
-        <div class="flex flex-col justify-center text-sm wrapper-login piece-left">  
+        <div class="flex flex-col justify-center text-sm piece-left">  
             <h1 class=header-log-in>
-                Log In
+                LOG IN
             </h1>
             <label  class="font-bold text-grey-800 text-center label" for = "email">
                 Email
@@ -71,48 +69,82 @@
             <label  class="font-bold text-grey-800 text-center label"for = "psswd">
                 Password
             </label>
-            <input class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
+            <input placeholder="password" class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
              type = "password" name ="psswd" bind:value ={passwordLogin}>
 
             <button class= "w-full shadow-sm rounded button"type = "Submit">
                 Submit
             </button>
             <a href="../signup">
-                <p class="font-bold text-grey-800 text-center label-link">
+                <p class="clickhere font-bold text-grey-800 text-center label-link">
                     Click here for signing up if it's your first time here
                 </p>    
             </a>
+            
         </div>
 
-        <div class="wrapper-descriptor flex flex-col justify-center piece-right">  
-            <img src="../../static/piscaria.png" alt="Fishmarket" class="image-log-in">
-        </div>   
+         
+            <img src="../../static/priscilia.jpg" alt="Fishmarket" class="image-log-in">
+          
     </form>
-
-    <p class="txt text-center">
-        sanlnaslnslk sodsua ajnjd a+psjiosjkldan dajndjnad  osaidsjn n
-        jikasn ddian djkddn kadposo jsoisnjspa ssajsn cjnajkioohasub<br/>
-        siujhasdkj jsakkadnh 
-        ahdnskjdajk 
-        ajhdsnkakshja  akhjduohdsio usdhjkn spskldsn adsjjkan ladjk iugbuni
-
-    </p>   
+    <h1 class="txt-top wrapper-login">
+        Join our community
+    </h1> 
 </div>
 
 
 
+
+
 <style>
+	@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:ital,wght@0,700;0,900;1,600;1,900&display=swap');    
+    @font-face {
+		font-family: 'Better Grade';
+		src: url('../../static/fonts/BetterGrade.eot');
+		src: url('../../static/fonts/BetterGrade.eot?#iefix') format('embedded-opentype'),
+			url('../../static/fonts/BetterGrade.woff2') format('woff2'),
+			url('../../static/fonts/BetterGrade.woff') format('woff'),
+			url('../../static/fonts/BetterGrade.ttf') format('truetype'),
+			url('../../static/fonts/BetterGrade.svg#BetterGrade') format('svg');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
+    .wrapper-login{
+        width:100%;
+		height:100%;
+		background-image: url("../../static/piscaria.svg");
+		background-size: cover;
+        background-position: center;
+    }
+
     .sub-header{
-        margin-top: 5%;
+        margin-top: 0%;
+        margin-bottom: 3%;
+		font-family: 'Playfair Display';
+		font-weight: bold;
+		font-size: 17px;
+		color: #6a8aaa;
+		font-style: italic;
     }
     .txt-top{
-        margin-top:10%;
-		font-family: 'Playfair Display', serif;
-    }
+        color: #6a8aaa;
+		font-family:"Better Grade";
+		margin-top:5%;
+		margin-bottom: 5%;
+		font-size: 1000%;
+		flex-basis: 100%;
+		flex-shrink: 3;
+	}
+    
     .txt{	
 		/*margin-top:25%;
 		margin-bottom:25%;*/
 		font-family: 'Playfair Display', serif;
+        color: #6a8aaa;
 	}
 
     /*.form-log-in{
@@ -121,17 +153,56 @@
     }*/
     
     .image-log-in{
-        width:100%;
+        width:50%;
+        height: 50%;
         size:100%;
-        border-radiuS:7%;
-        margin-bottom: 25%;
+        margin-bottom: 3%;
     }
+
     .header-log-in{
-        margin-bottom: 15%;
+        color: #6a8aaa;
+		font-family: "Playfair Display";
+		font-weight:300;
+    	font-size: 44px;
+    	letter-spacing: 5px;
+		padding-top: 5%;
+		padding-bottom: 5%;
     }
-    .label{
+    .label
+    {
         margin-top: 10%;
         margin-bottom: 3%;
+		font-family: 'Playfair Display';
+		font-weight: bold;
+		font-size: 17px;
+		color: #6a8aaa;
+		font-style: italic;
+    }
+
+    .Submit
+    {
+        margin-top: 10%;
+        margin-bottom: 3%;
+		font-family: 'Playfair Display';
+		font-weight: bold;
+		font-size: 17px;
+		color: #6a8aaa;
+		font-style: italic;
+    }
+
+    .clickhere{
+        font-family: 'Lato';
+		font-weight: bold;
+		font-size: 17px;
+        font-weight: 800;
+        color: #6a8aaa;
+    }
+
+    .fontforinput{
+        font-family: 'Playfair Display';
+		font-weight: bold;
+		font-size: 13px;
+        color: #6a8aaa;
     }
 
     .button{
@@ -140,8 +211,9 @@
     }
 
     .wrapper-descriptor{
-        margin-top:20%;
+        margin-left: 20%;
     }
+
     .piece-left,
     .piece-right{
         margin-left: auto;
