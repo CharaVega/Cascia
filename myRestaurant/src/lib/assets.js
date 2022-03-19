@@ -102,6 +102,30 @@ export const reservationHandler = async(hour, date, nPeople) => {
     }
 }
 
+//-----------------Writing message data on supabase db
+
+export const insertMessageData = async(uid, object, message) => {
+    try {
+        const { error } = await supabase
+            .from('Reservations')
+            .insert([{ object: object, text: message, author: uid }], { returning: "minimal" } //Setting returning to minimal for liminting the default return implemented by .insert() 
+            )
+        if (error) {
+            console.log("Callback insertMessageData");
+            console.log("ERROR : Could not write data");
+            throw error;
+        } else {
+            console.log("Callback insertMessageData");
+            console.log("Data written successfully");
+            alert("The reservation was successfull");
+        }
+    } catch (err) {
+        console.error(err);
+        alert(err.error_description || err.message);
+    } finally {
+        console.log("function call ended")
+    }
+}
 
 //-----------------Writing user data on supabase db at sign up
 export const insertUserData = async(uid_, username_, email_, name_, surname_, phone_) => {
