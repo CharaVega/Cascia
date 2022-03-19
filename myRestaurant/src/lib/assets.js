@@ -1,6 +1,6 @@
 import supabase from '$lib/db'
 import { user } from "$lib/stores/authStore"
-
+import { goto } from "$app/navigation";
 
 //---------------Reading data from supabase
 export async function readUserData() {
@@ -102,7 +102,64 @@ export const reservationHandler = async(hour, date, nPeople) => {
     }
 }
 
-//-----------------Writing message data on supabase db
+//--------------------For handling the signup
+export const signUpHandler = async(emailSignin, passwordSignin, confPasswdSignin, userName, firstName, lastName, phoneNumber) => {
+    if (passwordSignin === confPasswdSignin) {
+        try {
+            console.log(emailSignin);
+            const { error } = await supabase.auth.signUp({
+                email: emailSignin,
+                password: passwordSignin
+            });
+            if (error) {
+                throw error;
+            } else {
+                const uid = await supabase.auth.user().id;
+                insertUserData(uid, userName, emailSignin, firstName, lastName, phoneNumber);
+                alert("Subscribed Successfully!!!");
+                goto("/login");
+                console.log(supabase.auth.onAuthStateChange)
+            }
+        } catch (err) {
+            console.error(err);
+            alert(err.error_description || err.message);
+        } finally {
+            console.log("Function call ended");
+        }
+    } else {
+        alert("The inserted passwords do not match");
+    }
+}
+
+
+//---------------------For handling the login
+export const loginHandler = async(emailLogin, passwordLogin) => {
+        try {
+            //logging in the user
+            const { error } = await supabase.auth.signIn({
+                email: emailLogin,
+                password: passwordLogin
+            });
+            if (error) {
+                console.log(error);
+                alert("Check the email used for the login");
+                throw error;
+            } else {
+                console.log("The connected user is :", supabase.auth.user());
+                //alert("Successfully logged in");
+                user.set(true);
+                console.log(user);
+
+                goto("/book");
+            }
+        } catch (err) {
+            console.error(err);
+            alert(err.error_description || err.message);
+        } finally {
+            console.log("Function call ended");
+        }
+    }
+    //-----------------Writing message data on supabase db
 
 export const insertMessageData = async(uid, object, message) => {
     try {
