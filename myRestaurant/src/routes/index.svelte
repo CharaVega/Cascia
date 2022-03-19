@@ -24,7 +24,7 @@
                 </a>
             </div>-->			
 			<h1 class = "catch-phrase">
-				le Goute Local
+				Il Gusto Locale
 			</h1>
 		</div>
 	</section>

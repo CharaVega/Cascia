@@ -44,11 +44,11 @@
         <label for="object" class="text-center label">
             What is it about?
         </label>
-        <input bind:value ={messageObj} type="text" id="object" name="object" placeholder="Write something.." style="height:200px">
-        <label for="texts" class="text-center label">
+        <input bind:value ={messageObj} type="text" class="messagebox flex flex-col justify-center wrapper" id="object" name="object" placeholder="">
+        <label for="texts" class="text-center label label">
             Your comments
         </label>
-        <input bind:value ={messageText} type="text" id="text" name="text" placeholder="Write something.." style="height:200px">
+        <input bind:value ={messageText} type="text" id="text" name="text" class="messagebox flex flex-col justify-center wrapper" placeholder="">
         <input type="submit" value="Submit" class="submit"> 
     </form>
 {/if}
@@ -58,19 +58,19 @@
         <form on:submit|preventDefault = {handleLogin} class="flex flex-column justify-between">       
             <div class="flex flex-col justify-center text-sm piece-left">  
                 <h1 class=header-log-in>
-                    LOG IN
+                    LOG IN <br> TO REACH OUT
                 </h1>
-                <label  class="font-bold text-grey-800 text-center label" for = "email">
+                <label  class="font-bold text-grey-400 text-center label" for = "email">
                     Email
                 </label>
-                <input class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
+                <input class="appearance-none border p-3 focus:outline-none "
                 type = "email" name ="email" bind:value ={emailLogin}>
-                <label  class="font-bold text-grey-800 text-center label"for = "psswd">
+                <label  class="font-bold text-grey-400 text-center label"for = "psswd">
                     Password
                 </label>
-                <input placeholder="password" class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
+                <input placeholder="" class="appearance-none border p-3 focus:outline-none"
                 type = "password" name ="psswd" bind:value ={passwordLogin}>
-                <button class= "w-full shadow-sm rounded button"type = "Submit">
+                <button class= "w-full shadow-sm text-grey-400 rounded button"type = "Submit">
                     Submit
                 </button>
                 <a href="../signup">
@@ -182,6 +182,7 @@
     letter-spacing: 5px;
     padding-top: 5%;
     padding-bottom: 5%;
+    line-height: 40px;
 }
 .label
 {
@@ -194,15 +195,17 @@
     font-style: italic;
 }
 
-.Submit
+.submit
 {
-    margin-top: 10%;
-    margin-bottom: 3%;
+    margin-bottom: 30%;
+    margin-top: 5%;
+    margin-left:30%;
     font-family: 'Playfair Display';
     font-weight: bold;
     font-size: 17px;
     color: #6a8aaa;
     font-style: italic;
+    width: 42%;
 }
 
 .clickhere{
@@ -238,6 +241,16 @@
     margin-top: 15%;
     font-size: smaller;
     
+}
+
+.messagebox{
+    font-family: "Playfair Display";
+    font-size: 17px;
+    font-style: normal;
+    color: lightslategray;
+    height: 200px;
+    width: 420px;
+    margin-left: 30%;
 }
 </style>
 <!--

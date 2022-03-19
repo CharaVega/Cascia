@@ -55,42 +55,42 @@
             <label  class="font-bold text-grey-800 text-center label" for = "email">
                 Email
             </label>
-            <input class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
+            <input class=" txtinbox appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
                 type = "email" name ="email" bind:value ={emailSignin}>
             <label  class="font-bold text-grey-800 text-center label"for = "psswd">
                 Password
             </label>
-            <input class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
+            <input class="txtinbox appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
             type = "password" name ="psswd" bind:value ={passwordSignin}>
             <label  class="font-bold text-grey-800 text-center label"for = "confirmpsswd">
                 Confirm password
             </label>
-            <input class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
+            <input class="txtinbox appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
             type = "password" name ="confirmpsswd" bind:value ={confPasswdSignin}>
             <label  class="font-bold text-grey-800 text-center label"for = "first-name">
                 First name
             </label>
-            <input class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
+            <input class="txtinbox appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
             type = "text" name ="first-name" bind:value ={firstName}>
             <label  class="font-bold text-grey-800 text-center label"for = "last-name">
                 Last name
             </label>
-            <input class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
+            <input class="txtinbox appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
             type = "text" name ="last-name" bind:value ={lastName}>
             <label  class="font-bold text-grey-800 text-center label"for = "user-name">
                 User name
             </label>
-            <input class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
+            <input class="txtinbox appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
             type = "text" name ="user-name" bind:value ={userName}>
             <label  class="font-bold text-grey-800 text-center label"for = "phone-number">
                 Phone number
             </label>
-            <input class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
+            <input class="txtinbox appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
             type = "tel" name ="phone-number" bind:value ={phoneNumber}>   
 
 
 
-            <button class= "Playfair Display w-full shadow-sm rounded button"type = "Submit">
+            <button class= "Submit w-full shadow-sm rounded button"type = "Submit">
                 Submit
             </button>
             <a href="../signup">
@@ -192,20 +192,28 @@
         margin-bottom: 3%;
 		font-family: 'Playfair Display';
 		font-weight: bold;
-		font-size: 17px;
+		font-size: 15px;
 		color: #6a8aaa;
 		font-style: italic;
     }
+
+    .txtinbox{
+        font-family: 'Playfair Display';
+		font-weight: normal;
+        font-style: italic;
+		font-size: 15px;
+		color: #6a8aaa;
+    }
+
 
     .Submit
     {
         margin-top: 10%;
         margin-bottom: 3%;
-		font-family: 'Playfair Display';
+		font-family: 'Lato';
 		font-weight: bold;
-		font-size: 17px;
+		font-size: 12px;
 		color: #6a8aaa;
-		font-style: italic;
     }
 
     .clickhere{

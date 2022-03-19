@@ -289,11 +289,40 @@
             </div>
         </div>
     </div>
-    <div class="image-wrapper flex flex-row justify-center">
-        <img class="img-bottom" src="//f.hubspotusercontent30.net/hub/20410430/hubfs/raw_assets/public/bodrum/images/placeholders/bodrumnyc_25007218_344099152725356_3150165147893366784_n.jpg?width=265&amp;height=443&amp;name=bodrumnyc_25007218_344099152725356_3150165147893366784_n.jpg" alt="Delicious Turkish food at Bodrum restaurant NYC" loading="lazy" width="265" height="443" srcset="//f.hubspotusercontent30.net/hub/20410430/hubfs/raw_assets/public/bodrum/images/placeholders/bodrumnyc_25007218_344099152725356_3150165147893366784_n.jpg?width=530&amp;height=886&amp;name=bodrumnyc_25007218_344099152725356_3150165147893366784_n.jpg 2x">
-        <img class="img-bottom" src="//f.hubspotusercontent30.net/hub/20410430/hubfs/raw_assets/public/bodrum/images/placeholders/bodrumnyc_26183569_523918491297059_4530337022853775360_n.jpg?width=265&amp;height=443&amp;name=bodrumnyc_26183569_523918491297059_4530337022853775360_n.jpg" alt="Delicious Turkish brunch upper west side manhattan" loading="lazy" width="265" height="443" srcset="//f.hubspotusercontent30.net/hub/20410430/hubfs/raw_assets/public/bodrum/images/placeholders/bodrumnyc_26183569_523918491297059_4530337022853775360_n.jpg?width=530&amp;height=886&amp;name=bodrumnyc_26183569_523918491297059_4530337022853775360_n.jpg 2x">
-        <img class="img-bottom" src="//f.hubspotusercontent30.net/hub/20410430/hubfs/raw_assets/public/bodrum/images/placeholders/bodrumnyc-122407969_397145115026399_3066223416681373113_n.jpg?width=265&amp;height=443&amp;name=bodrumnyc-122407969_397145115026399_3066223416681373113_n.jpg" alt="Cooking in a brick oven at Bodrum restaurant NYC" loading="lazy" width="265" height="443" srcset="//f.hubspotusercontent30.net/hub/20410430/hubfs/raw_assets/public/bodrum/images/placeholders/bodrumnyc-122407969_397145115026399_3066223416681373113_n.jpg?width=530&amp;height=886&amp;name=bodrumnyc-122407969_397145115026399_3066223416681373113_n.jpg 2x">
-    </div>
+
+
+	<section class="third blocks">
+		<div class="wrapper-block-3 flex flex-wrap flex-row text-center font-bold justify-center">		
+				<div class="block-3-menu-image-1">
+					<a href="menu-1 wrapper-link-block-3" class="menu-link">
+						<p class="boxesunderpics">
+							LUNCH AND DINNER
+						</p>
+						<img src="../../static/fooddisplayone.png" alt="menu visualize" class="menu-img-blck-3">
+					</a>			
+				</div>
+				<div class="block-3-menu-image-2">
+					<a href="menu-2 wrapper-link-block-2" class="menu-link">
+						<p class="boxesunderpics">
+							WINES AND BEVERAGES
+						</p>
+						<img src="../../static/fooddisplaytwo.png" alt="menu visualize" class="menu-img-blck-3">
+					</a>
+				</div>
+				<div class="block-3-menu-image-3">
+					<a href="menu-3 wrapper-link-block-2" class="menu-link">
+						<p class="boxesunderpics">
+							AFTERNOON TEA
+						</p>
+						<img src="../../static/fooddisplaythree.png" alt="menu visualize" class="menu-img-blck-3">
+					</a>
+				</div>
+		</div>
+	</section>
+
+
+
+
 </div>
 
 <style>
@@ -306,16 +335,49 @@
     .meta-menu{
         color: #7898b8;
         margin-top: 20%;
-        margin-bottom: 20%;
+        margin-bottom: 10%;
+        font-family: "Lato";
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 3px;
+        display: inline-block;
+        line-height: 1;
+        text-transform: uppercase;
     }
+
     .food-menu-heading{
-        margin-top:20%;
-        color: #2b2b2b;
+        color: #7898b8;
+        margin-top: 20%;
+        margin-bottom: 5%;
+        font-family: "Lato";
+        font-weight: 800;
+        font-size: 22px;
+        letter-spacing: 3px;
+        display: inline-block;
+        line-height: 1;
+        text-transform: uppercase;
     }
     .food-menu-item{
         row-gap:10%;
         margin-top:10%;
+        color: #7898b8;
+        font-family: "Lato";
+        padding-bottom: 3%;
+        font-size: 17px;
+        letter-spacing: 5px;
+        display: inline-block;
+        line-height: 1;
     }
+
+    .food-ingredients{
+		color:#6a85a2;
+		font-family: "Playfair Display",serif;
+		font-style: italic;
+		font-weight:600;
+    	font-size: 13px;
+        padding-top: 2%;
+    }
+
     .image-wrapper{
         column-gap: 15%;
         margin-top:15%;
@@ -324,4 +386,75 @@
     .img-bottom{
         border-radius:7%;
     }
+
+
+.wrapper-block-3{
+    background-image: url("../../static/edits/svg/threelines.svg");
+    background-size:cover;
+    width:100%;
+    height:50%;
+}
+
+.wrapper-link-block-3{
+    display:flex;
+    flex-direction: column flex;
+    justify-content: space-evenly;
+    width:100%;
+    height:100%;
+
+}
+
+
+.block-3-menu-image-1,
+.block-3-menu-image-2,
+.block-3-menu-image-3{
+    flex-basis:20%;
+    margin-left:2%;
+    margin-right:2%;
+    margin-top:25%;
+    margin-bottom: 25%;
+    size:15%;
+    border-radius: 3%;
+}
+.block-3-text{
+    text-align:center;
+    margin-bottom:5%;
+    position:relative;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 17px;
+    color: #6a8aaa;
+    font-style: italic;
+}
+
+.boxesunderpics {
+    fill: #FFFFFF;
+    color: #6a8aaa;
+    border-style: solid;
+    border-width: 3px 3px 3x 3px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-family: 'Lato';
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 3px;
+    display: inline-block;
+    line-height: 1;
+    padding: 14px 28px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.menu-img-blck-3{
+    border-radius: 7%;
+}
+
+.block-3-text{
+    text-align: center;
+    font-size: 100%;
+}
+
 </style>
