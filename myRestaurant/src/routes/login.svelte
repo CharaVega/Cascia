@@ -61,18 +61,18 @@
             <h1 class=header-log-in>
                 LOG IN
             </h1>
-            <label  class="font-bold text-grey-800 text-center label" for = "email">
+            <label  class="font-bold text-center label" for = "email">
                 Email
             </label>
-            <input class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
+            <input class="txtinbox appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500"
              type = "email" name ="email" bind:value ={emailLogin}>
-            <label  class="font-bold text-grey-800 text-center label"for = "psswd">
+            <label  class="font-bold text-center label"for = "psswd">
                 Password
             </label>
-            <input placeholder="password" class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
+            <input placeholder="password" class="txtinbox appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500"
              type = "password" name ="psswd" bind:value ={passwordLogin}>
 
-            <button class= "w-full shadow-sm rounded button"type = "Submit">
+            <button class= "Submit w-full shadow-sm rounded button label"type = "Submit">
                 Submit
             </button>
             <a href="../signup">
@@ -168,26 +168,34 @@
 		padding-top: 5%;
 		padding-bottom: 5%;
     }
+
     .label
     {
-        margin-top: 10%;
-        margin-bottom: 3%;
+        margin-top: 15%;
+        margin-bottom: 0%;
 		font-family: 'Playfair Display';
 		font-weight: bold;
-		font-size: 17px;
+        font-style: italic;
+		font-size: 15px;
 		color: #6a8aaa;
-		font-style: italic;
+    }
+
+    .txtinbox{
+        font-family: 'Playfair Display';
+		font-weight: normal;
+        font-style: italic;
+		font-size: 15px;
+		color: #6a8aaa;
     }
 
     .Submit
     {
         margin-top: 10%;
         margin-bottom: 3%;
-		font-family: 'Playfair Display';
+		font-family: 'Lato';
 		font-weight: bold;
-		font-size: 17px;
+		font-size: 12px;
 		color: #6a8aaa;
-		font-style: italic;
     }
 
     .clickhere{

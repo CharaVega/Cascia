@@ -59,22 +59,25 @@
 
 {#if !$user}
     <div class="flex flex-col justify-center">
+        <div class="image-log-in flex flex-col justify-center">
+            <img src="../../static/edits/svg/leaf.svg" alt="menu visualize" class="menu-img-blck-3">
+        </div>
         <form on:submit|preventDefault = {handleLogin} class="flex flex-column justify-between">       
             <div class="flex flex-col justify-center text-sm piece-left">  
                 <h1 class=header-log-in>
-                    LOG IN
+                    LOG IN <br><br> TO RESERVE
                 </h1>
                 <label  class="font-bold text-grey-800 text-center label" for = "email">
                     Email
                 </label>
-                <input class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
+                <input class="txtinbox appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500"
                 type = "email" name ="email" bind:value ={emailLogin}>
                 <label  class="font-bold text-grey-800 text-center label"for = "psswd">
                     Password
                 </label>
-                <input placeholder="password" class="appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500 rounded-lg "
+                <input placeholder="" class="txtinbox appearance-none shadow-sm border p-2 focus:outline-none focus:border-gray-500"
                 type = "password" name ="psswd" bind:value ={passwordLogin}>
-                <button class= "w-full shadow-sm rounded button"type = "Submit">
+                <button class= "Submit w-full shadow-sm rounded button"type = "Submit">
                     Submit
                 </button>
                 <a href="../signup">
@@ -83,21 +86,59 @@
                     </p>    
                 </a>         
             </div>         
-            <img src="../../static/priscilia.jpg" alt="Fishmarket" class="image-log-in">        
+                    
         </form>
         <h1 class="txt-top wrapper-login">
-            Join our community
+            Benvenuto
         </h1> 
     </div>
+
+
+	<section class="third blocks">
+		<div class="wrapper-block-3 flex flex-wrap flex-row text-center font-bold justify-center">		
+				<div class="block-3-menu-image-1">
+					<a href="menu-1 wrapper-link-block-3" class="menu-link">
+						<p class="boxesunderpics">
+							LUNCH AND DINNER
+						</p>
+						<img src="../../static/fooddisplayone.png" alt="menu visualize" class="menu-img-blck-3">
+					</a>			
+				</div>
+				<div class="block-3-menu-image-2">
+					<a href="menu-2 wrapper-link-block-2" class="menu-link">
+						<p class="boxesunderpics">
+							WINES AND BEVERAGES
+						</p>
+						<img src="../../static/fooddisplaytwo.png" alt="menu visualize" class="menu-img-blck-3">
+					</a>
+				</div>
+				<div class="block-3-menu-image-3">
+					<a href="menu-3 wrapper-link-block-2" class="menu-link">
+						<p class="boxesunderpics">
+							AFTERNOON TEA
+						</p>
+						<img src="../../static/fooddisplaythree.png" alt="menu visualize" class="menu-img-blck-3">
+					</a>
+				</div>
+		</div>
+	</section>
+
+
+
+
+
 {/if}
 {#if $user}
     <div class="flex flex-col justify-center main-book">
+        <div class="image-log-in flex flex-col justify-center">
+            <img src="../../static/edits/svg/leaf.svg" alt="menu visualize" class="menu-img-blck-3">
+        </div>
         <div class="flex flex-row justify-evenly">
             <div class="flex flex-row justify-center">
                 <form on:submit|preventDefault = {handleSubmit} class = "flex flex-row justify-between  main-form" id = "form">            
                     <div class="flex flex-col justify-center text-sm piece-left-book">  
                         <h1 class="head">
-                            BOOK A TABLE 
+                            BOOK A <br> TABLE HERE
                         </h1>
                         <div class="flex flex-col justify-center">
                             <label for="date" class="text-center label">
@@ -117,7 +158,7 @@
                             </label>
                             <input type="number" class="input" name="nPeople" min="1" max="15" bind:value = {nPeople}/>
                         </div>
-                        <button class= "w-full shadow-sm rounded button submit"type = "Submit">
+                        <button class= "Submit w-full shadow-sm rounded button submit"type = "Submit">
                             Submit
                         </button>
                         <a href="../signup">
@@ -128,10 +169,10 @@
                     </div>                    
                 </form>
             </div>
-            <img src="../../static/priscilia.jpg" alt="Fishmarket" class="image-log-in"> 
-        </div>
+            
+            </div>
         <h1 class="txt-top wrapper-login">
-            Join our community
+            See you soon!
         </h1> 
     </div>
 {/if}
@@ -196,11 +237,16 @@
     }*/
     
     .image-log-in{
-        width:50%;
-        height: 50%;
-        size:100%;
-        margin-bottom: 3%;
+        width:10%;
+        height: 10%;
+        size:10%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 45%;
+        border-radius: 8px;
     }
+
+
 
     .header-log-in{
         color: #6a8aaa;
@@ -208,9 +254,11 @@
 		font-weight:300;
     	font-size: 44px;
     	letter-spacing: 5px;
-		padding-top: 5%;
-		padding-bottom: 5%;
+		padding-top: 20%;
+		padding-bottom: 10%;
+        line-height: 25px;
     }
+    
     .label
     {
         margin-top: 10%;
@@ -226,11 +274,10 @@
     {
         margin-top: 10%;
         margin-bottom: 3%;
-		font-family: 'Playfair Display';
+		font-family: 'Lato';
 		font-weight: bold;
-		font-size: 17px;
+		font-size: 12px;
 		color: #6a8aaa;
-		font-style: italic;
     }
 
     .clickhere{
@@ -255,7 +302,8 @@
 
     
     .piece-left{
-        margin-left:15%;      
+        margin-left:38%; 
+        border-radius: 8px;     
     }
     .label-link{
         margin-top: 15%;
@@ -263,8 +311,14 @@
         
     }
     .head{
-        margin-top:10%;
-        margin-bottom:15%;
+        color: #6a8aaa;
+		font-family: "Playfair Display";
+		font-weight:300;
+    	font-size: 44px;
+    	letter-spacing: 5px;
+		padding-top: 20%;
+		padding-bottom: 10%;
+        line-height: 43px;
     }
     .main-form{
         margin-bottom:15%;
@@ -276,14 +330,101 @@
     .input{
         border-radius: 7%;
         size:100%;
+        font-family: 'Playfair Display';
+		font-weight: normal;
+        font-style: italic;
+		font-size: 15px;
+		color: #6a8aaa;
     }
-    .submit{
-        margin-top:15%;
+
+    .Submit
+    {
+        margin-top: 10%;
+        margin-bottom: 3%;
+		font-family: 'Lato';
+		font-weight: bold;
+		font-size: 12px;
+		color: #6a8aaa;
     }
+
+    .txtinbox{
+        font-family: 'Playfair Display';
+		font-weight: normal;
+        font-style: italic;
+		font-size: 15px;
+		color: #6a8aaa;
+    }
+
+
+.wrapper-block-3{
+    background-image: url("../../static/edits/svg/threelines.svg");
+    background-size:cover;
+    width:100%;
+    height:50%;
+}
+
+.wrapper-link-block-3{
+    display:flex;
+    flex-direction: column flex;
+    justify-content: space-evenly;
+    width:100%;
+    height:100%;
+
+}
+
+
+.block-3-menu-image-1,
+.block-3-menu-image-2,
+.block-3-menu-image-3{
+    flex-basis:20%;
+    margin-left:2%;
+    margin-right:2%;
+    margin-top:25%;
+    margin-bottom: 25%;
+    size:15%;
+    border-radius: 3%;
+}
+.block-3-text{
+    text-align:center;
+    margin-bottom:5%;
+    position:relative;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 17px;
+    color: #6a8aaa;
+    font-style: italic;
+}
+
+.boxesunderpics {
+    fill: #FFFFFF;
+    color: #6a8aaa;
+    border-style: solid;
+    border-width: 3px 3px 3x 3px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-family: 'Lato';
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 3px;
+    display: inline-block;
+    line-height: 1;
+    padding: 14px 28px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.menu-img-blck-3{
+    border-radius: 7%;
+}
+
+.block-3-text{
+    text-align: center;
+    font-size: 100%;
+}
 </style>
-
-
-
 
 <!--
 <svelte:head>

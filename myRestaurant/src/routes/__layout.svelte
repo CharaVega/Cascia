@@ -37,7 +37,7 @@
 	<nav class="wrapper-navbar flex flex-row justify-center">
 		<button class= "menuicon-findatable menu-rect">
 			<a href="../contact" class="text-top-bar">
-				(06)7984-3419
+				CONTACT US
 			</a>
 		</button>
 		<button  class = "menuicon-findatable menu-rect" >
