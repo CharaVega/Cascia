@@ -319,10 +319,6 @@
 				</div>
 		</div>
 	</section>
-
-
-
-
 </div>
 
 <style>
@@ -378,83 +374,54 @@
         padding-top: 2%;
     }
 
-    .image-wrapper{
-        column-gap: 15%;
-        margin-top:15%;
-        margin-bottom:15%;
+
+
+
+    .wrapper-block-3{
+        background-image: url("../../static/edits/svg/threelines.svg");
+        background-size:cover;
+        width:100%;
+        height:50%;
     }
-    .img-bottom{
-        border-radius:7%;
+
+
+    .block-3-menu-image-1,
+    .block-3-menu-image-2,
+    .block-3-menu-image-3{
+        flex-basis:20%;
+        margin-left:2%;
+        margin-right:2%;
+        margin-top:25%;
+        margin-bottom: 25%;
+        size:15%;
+        border-radius: 3%;
     }
 
 
-.wrapper-block-3{
-    background-image: url("../../static/edits/svg/threelines.svg");
-    background-size:cover;
-    width:100%;
-    height:50%;
-}
+    .boxesunderpics {
+        fill: #FFFFFF;
+        color: #6a8aaa;
+        border-style: solid;
+        border-width: 3px 3px 3x 3px;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-family: 'Lato';
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 3px;
+        display: inline-block;
+        line-height: 1;
+        padding: 14px 28px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+    .menu-img-blck-3{
+        border-radius: 7%;
+    }
 
-.wrapper-link-block-3{
-    display:flex;
-    flex-direction: column flex;
-    justify-content: space-evenly;
-    width:100%;
-    height:100%;
-
-}
-
-
-.block-3-menu-image-1,
-.block-3-menu-image-2,
-.block-3-menu-image-3{
-    flex-basis:20%;
-    margin-left:2%;
-    margin-right:2%;
-    margin-top:25%;
-    margin-bottom: 25%;
-    size:15%;
-    border-radius: 3%;
-}
-.block-3-text{
-    text-align:center;
-    margin-bottom:5%;
-    position:relative;
-    font-family: 'Playfair Display';
-    font-weight: bold;
-    font-size: 17px;
-    color: #6a8aaa;
-    font-style: italic;
-}
-
-.boxesunderpics {
-    fill: #FFFFFF;
-    color: #6a8aaa;
-    border-style: solid;
-    border-width: 3px 3px 3x 3px;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    font-family: 'Lato';
-    font-weight: 800;
-    font-size: 13px;
-    letter-spacing: 3px;
-    display: inline-block;
-    line-height: 1;
-    padding: 14px 28px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    text-align: center;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-}
-.menu-img-blck-3{
-    border-radius: 7%;
-}
-
-.block-3-text{
-    text-align: center;
-    font-size: 100%;
-}
 
 </style>

@@ -1,39 +1,9 @@
 <script>
-    import {goto} from "$app/navigation";
-    import {supabase} from "../supabase.js";
-    import {insertUserData} from "$lib/assets"
-    let loading = false;
+    import { signUpHandler} from "$lib/assets"
     let  emailSignin, passwordSignin, confPasswdSignin;
     let firstName, lastName, userName, phoneNumber;
     const handleSignUp = async () => {
-        if(passwordSignin===confPasswdSignin){
-            try {
-                loading = true;
-                console.log(emailSignin);
-                const {error} = await supabase.auth.signUp({
-                    email: emailSignin, 
-                    password: passwordSignin
-                });
-                if(error){
-                    throw error;
-                }
-                else{
-                    const uid = await supabase.auth.user().id;
-                    insertUserData(uid, userName, emailSignin, firstName, lastName, phoneNumber);                
-                    alert("Subscribed Successfully!!!");
-                    goto("/login");
-                    console.log(supabase.auth.onAuthStateChange)
-                }
-            }catch(err){
-                console.error(err);
-                alert(err.error_description || err.message);
-            }finally{
-                loading = false;
-            }
-        }
-        else{
-            alert("The inserted passwords do not match");
-        }
+       signUpHandler(emailSignin, passwordSignin, confPasswdSignin, userName, firstName, lastName, phoneNumber);
     }
 </script>
 
@@ -43,7 +13,7 @@
 
   
 <svelte:head>
-	<title>Sign in</title>
+	<title>Sign up</title>
 </svelte:head>
 
 
@@ -138,16 +108,6 @@
 		background-size: cover;
         background-position: center;
     }
-
-    .sub-header{
-        margin-top: 0%;
-        margin-bottom: 3%;
-		font-family: 'Playfair Display';
-		font-weight: bold;
-		font-size: 17px;
-		color: #6a8aaa;
-		font-style: italic;
-    }
     .txt-top{
         color: #6a8aaa;
 		font-family:"Better Grade";
@@ -157,18 +117,6 @@
 		flex-basis: 100%;
 		flex-shrink: 3;
 	}
-    
-    .txt{	
-		/*margin-top:25%;
-		margin-bottom:25%;*/
-		font-family: 'Playfair Display', serif;
-        color: #6a8aaa;
-	}
-
-    /*.form-log-in{
-        margin-top:10%;
-		margin-bottom:10%;
-    }*/
     
     .image-log-in{
         width:50%;
@@ -224,24 +172,13 @@
         color: #6a8aaa;
     }
 
-    .fontforinput{
-        font-family: 'Playfair Display';
-		font-weight: bold;
-		font-size: 13px;
-        color: #6a8aaa;
-    }
-
     .button{
         margin-top:10%;
         margin-bottom: 10%;
     }
 
-    .wrapper-descriptor{
-        margin-left: 20%;
-    }
 
-    .piece-left,
-    .piece-right{
+    .piece-left{
         margin-left: auto;
         margin-right: auto;
     }

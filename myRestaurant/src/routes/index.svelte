@@ -1,28 +1,11 @@
-<script context="module" lang="ts">
-	import { readTableData} from '$lib/assets';
-	import { checkAvailability} from '$lib/assets';
-	
-</script>
-
 <svelte:head>
 	<title>Home</title>
 </svelte:head>
 
-<!--
-	{#await checkAvailability()}
-
-	{/await}
--->
 
 <div class="wrapper flex flex-wrap flex-row text-center font-bold">
-	<!--<Header></Header>-->
 	<section class="first blocks">
-		<div class="wrapper-block-1 flex flex-wrap flex-row text-center font-bold justify-center">
-			<!--<div class="wrapper-logo">
-                <a href="https://kit.svelte.dev">
-                    <img src="../../../static/logo.png" alt="SvelteKit" class="logo bg-blend-difference mix-blend-darken"/>
-                </a>
-            </div>-->			
+		<div class="wrapper-block-1 flex flex-wrap flex-row text-center font-bold justify-center">		
 			<h1 class = "catch-phrase">
 				Il Gusto Locale
 			</h1>
@@ -101,8 +84,6 @@
 	</section>
 </div>
 
-<!--<Footer></Footer>-->
-
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -121,30 +102,16 @@
 		font-style: normal;
 		font-display: swap;
 	}
-	/*
-	.wrapper {
-        display: flex;  
-        flex-flow: row wrap;
-        font-weight: bold;
-        text-align: center; 
-    }*/
 	.blocks {
 		width:100%;
 		height:100%;
 	}
-	.link-box{
-		size:15%;
-	}
 	.wrapper-block-1 {
-		/*position:relative;*/
         width:100%;
 		height:100%;
 		background-image: url(https://gigi-restaurant.com/wp-content/uploads/2021/12/Gigi-Val-dIsère@RomainRicard-17.jpg);
 		background-size: cover;
         background-position: center;
-        /*display:flex;
-		flex-direction: row flex;
-		justify-content: center;*/
 		z-index:6;
     }
 	.catch-phrase{
@@ -156,19 +123,7 @@
 		flex-basis: 100%;
 		flex-shrink: 3;
 	}
-	/*.block-2{
-		width:100%;
-		height:100%;
-		background-color: white;
-		display:inline-flex;
-		background-image: url("../../static/bg-block-2.png");
-		background-size:cover;
-		z-index: 6;
-	}*/
 	.wrapper-block-2{
-		/*display:flex;
-		flex-direction: row flex;
-		justify-content: center;*/
 		background-image: url("../../static/edits/svg/threelines.svg");
 		background-size:cover;
 		width:100%;
@@ -274,24 +229,11 @@
 		border-radius: 7%;		
 	}
 
-	/*.third blocks{
-		background-color: #6a8aaa;
-	}*/
-
 	.wrapper-block-3{
 		background-image: url("../../static/edits/svg/threelines.svg");
 		background-size:cover;
 		width:100%;
 		height:50%;
-	}
-
-	.wrapper-link-block-3{
-		display:flex;
-		flex-direction: column flex;
-		justify-content: space-evenly;
-		width:100%;
-		height:100%;
-
 	}
 
 	
@@ -305,16 +247,6 @@
 		margin-bottom: 25%;
 		size:15%;
 		border-radius: 3%;
-	}
-	.block-3-text{
-		text-align:center;
-		margin-bottom:5%;
-		position:relative;
-		font-family: 'Playfair Display';
-		font-weight: bold;
-		font-size: 17px;
-		color: #6a8aaa;
-		font-style: italic;
 	}
 
 	.boxesunderpics {
@@ -340,38 +272,5 @@
 	}
 	.menu-img-blck-3{
 		border-radius: 7%;
-	}
-	/*.block-3-menu-image-1{
-		background-color: #6a8aaa;
-
-	}
-	.block-3-menu-image-2{
-		display: inline-flexbox;
-		margin-left:auto;
-		margin-right:auto;
-		font-family:cursive;
-		width:100%;
-		height:100%;
-		position:relative;
-		margin-top:45%;
-		margin-bottom:45%;
-	}
-	.block-3-menu-image-3{
-		display: inline-flexbox;
-		margin-left:auto;
-		margin-right:auto;
-		margin-top:45%;
-		text-align: center;
-		font-family:cursive;	
-		width:100%;
-		height:100%;
-		position:relative;
-		margin-bottom:45%;
-		margin-top:45%;
-	}*/
-
-	.block-3-text{
-		text-align: center;
-		font-size: 100%;
 	}
 </style>

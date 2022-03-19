@@ -149,7 +149,6 @@ export const loginHandler = async(emailLogin, passwordLogin) => {
                 //alert("Successfully logged in");
                 user.set(true);
                 console.log(user);
-
                 goto("/book");
             }
         } catch (err) {
@@ -212,7 +211,6 @@ export const insertUserData = async(uid_, username_, email_, name_, surname_, ph
 export const getProfileInfo = async(uid_) => {
     try {
         var infoUsers = await readUserData();
-        //console.log("infoUsers : ", infoUsers);
         var profileInfo;
         for (var i = 0; i < infoUsers.length; i++) {
             if (infoUsers[i].id === uid_) {
@@ -225,20 +223,3 @@ export const getProfileInfo = async(uid_) => {
         alert(err.error_description || err.message);
     }
 }
-
-//---------OnLoad
-/*
-export const createLoadObserver = handler => {
-    let waiting = 0
-
-    const onload = el => {
-        waiting++
-        el.addEventListener('load', () => {
-            waiting--
-            if (waiting === 0) {
-                handler()
-            }
-        })
-    }
-    return onload
-}*/
