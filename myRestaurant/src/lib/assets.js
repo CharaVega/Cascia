@@ -107,7 +107,7 @@ export const reservationHandler = async(hour, date, nPeople) => {
 export const insertMessageData = async(uid, object, message) => {
     try {
         const { error } = await supabase
-            .from('Reservations')
+            .from('Messages')
             .insert([{ object: object, text: message, author: uid }], { returning: "minimal" } //Setting returning to minimal for liminting the default return implemented by .insert() 
             )
         if (error) {
@@ -117,7 +117,7 @@ export const insertMessageData = async(uid, object, message) => {
         } else {
             console.log("Callback insertMessageData");
             console.log("Data written successfully");
-            alert("The reservation was successfull");
+            alert("Your message was successfully sent!");
         }
     } catch (err) {
         console.error(err);

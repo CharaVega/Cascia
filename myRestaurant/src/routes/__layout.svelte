@@ -3,10 +3,12 @@
     import { user } from "$lib/stores/authStore";
 	import  supabase  from "$lib/db";
 	import { goto } from '$app/navigation';
+	import Contact from './contact.svelte';
 	const redirectToHome = () =>{
 		console.log("Callback redirectHome, redirecting");
 		goto("./");
 	}
+
 	const handleLogOut = async() =>{
 		try{
 			const {error} = await supabase.auth.signOut();
@@ -33,8 +35,8 @@
 		<img src="../../static/LOGO.svg" class="logo" alt="logo" on:click|preventDefault = {redirectToHome}>	
 	</div>
 	<nav class="wrapper-navbar flex flex-row justify-center">
-		<button  class = "menuicon-findatable menu-rect">
-			<a href="Phone Number" class="text-top-bar">
+		<button class= "menuicon-findatable menu-rect">
+			<a href="../contact" class="text-top-bar">
 				(06)7984-3419
 			</a>
 		</button>
