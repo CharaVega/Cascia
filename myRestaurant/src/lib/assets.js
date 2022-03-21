@@ -149,7 +149,7 @@ export const loginHandler = async(emailLogin, passwordLogin) => {
                 //alert("Successfully logged in");
                 user.set(true);
                 console.log(user);
-                goto("/book");
+                //goto("/book");
             }
         } catch (err) {
             console.error(err);

@@ -1,10 +1,12 @@
 <script>
 	import {user} from "$lib/stores/authStore";
     import {loginHandler} from "$lib/assets";
+    import {goto} from "$app/navigation";
 	//console.log(supabase.auth.user);
     let emailLogin, passwordLogin;
     const handleLogin = async () => {
-        loginHandler(emailLogin, passwordLogin)
+        loginHandler(emailLogin, passwordLogin);
+        goto("/book");
     }
     console.log("userSupabaseObject", user);
 </script>
@@ -39,7 +41,7 @@
         </div>
 
          
-            <img src="../../static/priscilia.jpg" alt="Fishmarket" class="image-log-in">
+        <img src="../../static/priscilia.jpg" alt="Fishmarket" class="image-log-in">
           
     </form>
     <h1 class="txt-top wrapper-login">
