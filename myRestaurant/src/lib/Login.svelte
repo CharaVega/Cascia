@@ -6,7 +6,6 @@
     let emailLogin, passwordLogin;
     const handleLogin = async () => {
         loginHandler(emailLogin, passwordLogin);
-        goto("/book");
     }
     console.log("userSupabaseObject", user);
 </script>
