@@ -56,12 +56,12 @@
 					LOGIN 
 				</a>	
 			</button>
-		{:else}
+		<!--{:else}
 			<button  class = "menuicon-findatable menu-rect">
 				<a href="../profile" class="text-top-bar">
 					PROFILE
 				</a>	
-			</button>
+			</button>-->
 		{/if}
 
 	</nav>
