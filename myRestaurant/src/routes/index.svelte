@@ -57,7 +57,7 @@
 	<section class="third blocks">
 		<div class="wrapper-block-3 flex flex-wrap flex-row text-center font-bold justify-center">		
 				<div class="block-3-menu-image-1">
-					<a href="menu-1 wrapper-link-block-3" class="menu-link">
+					<a href="../menu" class="menu-link">
 						<p class="boxesunderpics">
 							LUNCH AND DINNER
 						</p>
@@ -65,7 +65,7 @@
 					</a>			
 				</div>
 				<div class="block-3-menu-image-2">
-					<a href="menu-2 wrapper-link-block-2" class="menu-link">
+					<a href="../menu" class="menu-link">
 						<p class="boxesunderpics">
 							WINES AND BEVERAGES
 						</p>
@@ -73,7 +73,7 @@
 					</a>
 				</div>
 				<div class="block-3-menu-image-3">
-					<a href="menu-3 wrapper-link-block-2" class="menu-link">
+					<a href="../menu" class="menu-link">
 						<p class="boxesunderpics">
 							AFTERNOON TEA
 						</p>

@@ -22,9 +22,6 @@
             <img src="../../static/edits/svg/leaf.svg" alt="menu visualize" class="menu-img-blck-3">
         </div>
         <Login/>
-        <h1 class="txt-top wrapper-login">
-            Benvenuto
-        </h1> 
     </div>
 	<section class="third blocks">
 		<div class="wrapper-block-3 flex flex-wrap flex-row text-center font-bold justify-center">		
