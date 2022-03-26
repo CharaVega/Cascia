@@ -19,7 +19,7 @@
 {#if !$user}
     <div class="flex flex-col justify-center">
         <div class="image-log-in flex flex-col justify-center">
-            <img src="../../static/edits/svg/leaf.svg" alt="menu visualize" class="menu-img-blck-3">
+            <img src="../../static/img/leaf.svg" alt="menu visualize" class="menu-img-blck-3">
         </div>
         <Login/>
     </div>
@@ -30,7 +30,7 @@
 						<p class="boxesunderpics">
 							LUNCH AND DINNER
 						</p>
-						<img src="../../static/fooddisplayone.png" alt="menu visualize" class="menu-img-blck-3">
+						<img src="../../static/img/fooddisplayone.png" alt="menu visualize" class="menu-img-blck-3">
 					</a>			
 				</div>
 				<div class="block-3-menu-image-2">
@@ -38,7 +38,7 @@
 						<p class="boxesunderpics">
 							WINES AND BEVERAGES
 						</p>
-						<img src="../../static/fooddisplaytwo.png" alt="menu visualize" class="menu-img-blck-3">
+						<img src="../../static/img/fooddisplaytwo.png" alt="menu visualize" class="menu-img-blck-3">
 					</a>
 				</div>
 				<div class="block-3-menu-image-3">
@@ -46,7 +46,7 @@
 						<p class="boxesunderpics">
 							AFTERNOON TEA
 						</p>
-						<img src="../../static/fooddisplaythree.png" alt="menu visualize" class="menu-img-blck-3">
+						<img src="../../static/img/fooddisplaythree.png" alt="menu visualize" class="menu-img-blck-3">
 					</a>
 				</div>
 		</div>
@@ -60,7 +60,7 @@
 {#if $user}
     <div class="flex flex-col justify-center main-book">
         <div class="image-log-in flex flex-col justify-center">
-            <img src="../../static/edits/svg/leaf.svg" alt="menu visualize" class="menu-img-blck-3">
+            <img src="../../static/img/leaf.svg" alt="menu visualize" class="menu-img-blck-3">
         </div>
         <div class="flex flex-row justify-evenly">
             <div class="flex flex-row justify-center">
@@ -129,7 +129,7 @@
     .wrapper-login{
         width:100%;
 		height:100%;
-		background-image: url("../../static/piscaria.svg");
+		background-image: url("../../static/img/piscaria.svg");
 		background-size: cover;
         background-position: center;
     }
@@ -232,7 +232,7 @@
 
 
     .wrapper-block-3{
-        background-image: url("../../static/edits/svg/threelines.svg");
+        background-image: url("../../static/img/threelines.svg");
         background-size:cover;
         width:100%;
         height:50%;

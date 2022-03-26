@@ -32,7 +32,7 @@
 
 <div class="flex flex-col justify-center">
 	<div class ="flex flex-row justify-center">
-		<img src="../../static/LOGO.svg" class="logo" alt="logo" on:click|preventDefault = {redirectToHome}>	
+		<img src="../../static/img/LOGO.svg" class="logo" alt="logo" on:click|preventDefault = {redirectToHome}>	
 	</div>
 	<nav class="wrapper-navbar flex flex-row justify-center">
 		<button class= "menuicon-findatable menu-rect">
@@ -74,9 +74,9 @@
 	</div>-->
 	<div class="first-level">
 		<div class="wrapper-social-img flex flex-row justify-evenly">
-			<img src="../../static/fb-icon.svg" alt="facebook logo" class="fb-logo"/>
-			<img src="../../static/insta-icon.svg" alt="instagram logo" class="insta-logo">
-			<img src="../../static/trip-icon.png" alt="tripadvisor logo" class="tripadv-logo"/>
+			<img src="../../static/img/fb-icon.svg" alt="facebook logo" class="fb-logo"/>
+			<img src="../../static/img/insta-icon.svg" alt="instagram logo" class="insta-logo">
+			<img src="../../static/img/trip-icon.png" alt="tripadvisor logo" class="tripadv-logo"/>
 		</div>
 		<div class="second-level">
 			<div class="wrapper-info flex flex-row justify-center">

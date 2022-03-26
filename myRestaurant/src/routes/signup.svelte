@@ -104,7 +104,7 @@
     .wrapper-login{
         width:100%;
 		height:100%;
-		background-image: url("../../static/piscaria.svg");
+		background-image: url("../../static/img/piscaria.svg");
 		background-size: cover;
         background-position: center;
     }
